@@ -1,12 +1,12 @@
 equation = ""
 
-# clears the screen
+# clears the calculator screen
 def clear(label):
     global equation
     equation = ""
     label.config(text=equation)
 
-# calculates the given equation on screen
+# calculates the given equation on the screen
 def calculate(label):
     global equation
     result = ""
@@ -19,7 +19,7 @@ def calculate(label):
             equation = ""
     label.config(text=result)
 
-# show s the given written equation on the calculator screen
+# shows the written equation on the calculator screen
 def show(label, value):
     global equation
     equation += value
